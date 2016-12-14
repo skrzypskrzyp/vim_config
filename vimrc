@@ -29,6 +29,9 @@ imap <C-I> <c-o>:pyf ~/.config/clang-format.py<cr>
 "search and open file
 nnoremap <Space><Space> <C-w>gF
 nnoremap <Space>t :tabe **/*
+nnoremap <Space>e :e **/*
+nnoremap <Space>x :tabclose<CR>
+
 set noautochdir
 
 
