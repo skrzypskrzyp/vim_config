@@ -20,6 +20,10 @@ nnoremap <Space><Down> :wincmd j<CR>
 nnoremap <Space><Left> :wincmd h<CR>
 nnoremap <Space><Right> :wincmd l<CR>
 
+"don't use tabulators
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
 "clang-format.py
 map <C-I> :pyf ~/.config/clang-format.py<cr>
@@ -43,6 +47,7 @@ let g:NERDTreeQuitOnOpen = 0
 "Search
 nnoremap <Space>f yiw :Ack <C-r>" % <CR> :cope <CR>
 nnoremap <Space>h yiw :Ack <C-r>" **/* <CR> :cope <CR>
+nnoremap <Space>a :Ack 
 nnoremap <space>l :noh <CR>
 
 
